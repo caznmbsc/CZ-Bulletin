@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CZ Bulletin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="bodyBackground">
+        <img src="czordie.png" alt="backgroundImage">
+    </div>
+    <div class="bulletin">
+        <h1 class="specialText">CZ BULLETIN</h1>
+        <p>Here are all of the member 'To-Dos'</p>
+        <p><span style="background-color:red; border-radius: 2.5px; font-weight: bolder;">RED</span> means the deadline is SOON.</p>
+        <p><span style="border: greenyellow solid 2.5px; border-radius: 5px;">GREEN</span> means a MAKE-UP OPPORTUNITY.</p>
+        <p><span style="border: blue solid 2.5px; border-radius: 5px;">BLUE</span> means OPTIONAL.</p>
+    </div>
+    <div class="assignmentsTable" assignments-table>
+        <template assignment-card>
+            <div class="assignmentCard">
+                <p manager-role>Manager Role</p>
+                <p assignment><a href="">Assignment/Event</a></p>
+                <p deadline>DEADLINE</p>
+                <p reward>Reward</p>
+                <p penalty>Penalty</p>
+                <p makeup>Makeup</p>
+            </div>
+        </template>
+    </div>
+</body>
+</html>
