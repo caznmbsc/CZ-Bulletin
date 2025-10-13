@@ -59,7 +59,7 @@ async function fetchData(url) {
             }
 
             assignmentCard.querySelector("[manager-role]").textContent = row[0];
-            if (row[9] == '') {
+            if (row[2] == '') {
                 assignmentCard.querySelector("[assignment]").textContent = row[1];
             } else {
                 assignmentCard.querySelector("[assignment]").innerHTML = `<a href=\"${row[2]}\">${row[1]}</a>`;
