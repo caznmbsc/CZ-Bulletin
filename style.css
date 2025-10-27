@@ -99,6 +99,7 @@ body {
 
 .assignmentCard p {
     margin-top: 5px;
+    margin-bottom: 14px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
